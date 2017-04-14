@@ -28,12 +28,12 @@
         <!--Settings View Controller-->
         <scene sceneID="opC-d1-5nY">
             <objects>
-                <viewController id="e7m-Eo-gN4" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="e7m-Eo-gN4" customClass="SettingsViewController" customModule="I" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Dqm-4a-57G"/>
+                        <viewControllerLayoutGuide type="top" id="Dqm-4a-57G" customClass="Settings"/>
                         <viewControllerLayoutGuide type="bottom" id="ScT-QH-M2v"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zqx-Ai-HdQ">
+                    <view key="view" contentMode="scaleToFill" id="zqx-Ai-HdQ" customClass="SettingsViewController" customModule="SettingsViewController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -47,7 +47,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.5714512893" blue="0.93537449839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="I'm Done!">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="mRm-tb-2g0" kind="modal" id="uyf-DM-m4c"/>
@@ -71,25 +71,32 @@
                                 <rect key="frame" x="62" y="232" width="250" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Initial Brightness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kic-T1-dez">
-                                <rect key="frame" x="113" y="203" width="127" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Initial Brightness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kic-T1-dez">
+                                <rect key="frame" x="101" y="203" width="174" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiy-af-7Vx">
-                                <rect key="frame" x="77" y="429" width="198" height="56"/>
+                                <rect key="frame" x="89" y="423" width="198" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.5714512893" blue="0.93537449839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Demo Sunrise">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="Brightness" destination="PCy-EM-OT1" id="Ovs-db-5qu"/>
+                            <outlet property="Done" destination="lwF-Ah-3J1" id="HQo-Gw-GE7"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="DemoSunrise" destination="xiy-af-7Vx" id="sIy-gi-k04"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAN-y2-Dfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

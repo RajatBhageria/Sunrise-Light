@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class SettingsViewController: UIViewController{
+    
+    @IBOutlet weak var DemoSunrise: UIButton!
+    @IBOutlet weak var Done: UIButton!
+    @IBOutlet weak var Brightness: UISlider!
+}
