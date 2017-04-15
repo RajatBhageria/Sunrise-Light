@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Alarm/SettingsViewController.swift"
-            timestampString = "513966222.279915"
+            timestampString = "513966884.643798"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "SettingsViewController"
             landmarkType = "3">
          </BreakpointContent>

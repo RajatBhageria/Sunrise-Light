@@ -13,7 +13,8 @@ class SettingsViewController: UIViewController{
     @IBOutlet weak var demoButton: UIButton!
     
     @IBAction func demo(_ sender: Any) {
-        print("hello!")
+        var light: LightConnection = LightConnection();
+        light.turnOnLight();
     }
    
 
