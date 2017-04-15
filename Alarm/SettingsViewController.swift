@@ -8,6 +8,13 @@
 
 import Foundation
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController{
     
+    @IBOutlet weak var demoButton: UIButton!
+    
+    @IBAction func demo(_ sender: Any) {
+        print("hello!")
+    }
+   
+
 }
