@@ -125,6 +125,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AVAudioPlayerDelegate, Al
         //negative number means loop infinity
         audioPlayer!.numberOfLoops = -1
         audioPlayer!.play()
+        
+        //turn on the light! 
+        var light: LightConnection = LightConnection();
+        light.turnOnLight();
     }
     
     //AVAudioPlayerDelegate protocol, todo
