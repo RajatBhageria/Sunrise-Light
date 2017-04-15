@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="1175" y="-248"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--SettingsViewController-->
         <scene sceneID="opC-d1-5nY">
             <objects>
-                <viewController id="e7m-Eo-gN4" customClass="SettingsViewController" customModule="I" sceneMemberID="viewController">
+                <viewController title="SettingsViewController" id="e7m-Eo-gN4" customClass="SettingsViewController" customModule="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dqm-4a-57G" customClass="Settings"/>
                         <viewControllerLayoutGuide type="bottom" id="ScT-QH-M2v"/>
@@ -89,14 +89,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="Brightness" destination="PCy-EM-OT1" id="Ovs-db-5qu"/>
-                            <outlet property="Done" destination="lwF-Ah-3J1" id="HQo-Gw-GE7"/>
-                        </connections>
                     </view>
-                    <connections>
-                        <outlet property="DemoSunrise" destination="xiy-af-7Vx" id="sIy-gi-k04"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAN-y2-Dfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,6 +127,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wpP-0o-FSZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>

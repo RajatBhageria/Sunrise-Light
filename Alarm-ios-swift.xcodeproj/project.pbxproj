@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015466471EA276CC00DE4F15 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015466461EA276CC00DE4F15 /* SettingsViewController.swift */; };
 		01640D5B1E9DB64C001A6C7A /* MainAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEEC58B1BC641BF00459CF7 /* MainAlarmViewController.swift */; };
-		019D228A1E9FF67F00A82120 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D22891E9FF67F00A82120 /* SettingsViewController.swift */; };
 		2FA91509AE9AFF0E8ADFE463 /* Pods_Alarm_ios_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619AE39735E0E34D7A022B7A /* Pods_Alarm_ios_swiftTests.framework */; };
 		7732E6131E38A50200C9D9A2 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7732E6121E38A50200C9D9A2 /* Persistable.swift */; };
 		77570F6B1E3EEA75005E2923 /* PropertyReflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77570F6A1E3EEA75005E2923 /* PropertyReflectable.swift */; };
@@ -44,8 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015466461EA276CC00DE4F15 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		01640D491E9DA19A001A6C7A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		019D22891E9FF67F00A82120 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		0551C2257D4FD539FA435061 /* Pods-Alarm-ios-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm-ios-swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm-ios-swiftTests/Pods-Alarm-ios-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		152FA6BFBBDF230265DB3CC5 /* Pods-Alarm-ios-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm-ios-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm-ios-swift/Pods-Alarm-ios-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		5786BA40ADA21E6CFC6826DB /* Pods-Alarm-ios-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm-ios-swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm-ios-swiftTests/Pods-Alarm-ios-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,12 +130,12 @@
 		77A857121E42FDAD00971367 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				019D22891E9FF67F00A82120 /* SettingsViewController.swift */,
 				9EEEC58B1BC641BF00459CF7 /* MainAlarmViewController.swift */,
 				9EED78991AA36C7900961BC2 /* AlarmAddEditViewController.swift */,
 				9E16062B1C62358F009B2407 /* MediaViewController.swift */,
 				9E9BEE061BCF8FF8000CF364 /* WeekdaysViewController.swift */,
 				9E603F581BD7CA6600303E93 /* LabelEditViewController.swift */,
+				015466461EA276CC00DE4F15 /* SettingsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -446,7 +446,7 @@
 				7773A0FA1E4610B700811A1D /* SegueInfo.swift in Sources */,
 				77A8570D1E40D76000971367 /* AlarmApplicationDelegate.swift in Sources */,
 				9EED78941AA1E51700961BC2 /* AlarmModel.swift in Sources */,
-				019D228A1E9FF67F00A82120 /* SettingsViewController.swift in Sources */,
+				015466471EA276CC00DE4F15 /* SettingsViewController.swift in Sources */,
 				9E603F591BD7CA6600303E93 /* LabelEditViewController.swift in Sources */,
 				9EEEC58C1BC641BF00459CF7 /* MainAlarmViewController.swift in Sources */,
 				7732E6131E38A50200C9D9A2 /* Persistable.swift in Sources */,
