@@ -10,22 +10,24 @@ import Foundation
 
 class LightConnection{
     func turnOnLight(){
+        print("turnOnLight() called")
         sendCommand(command: "sunrise")
     }
     
     func demoFastClock(){
+        print("demoFastClock() called")
         sendCommand(command: "settime")
     }
     
     func demoColorShow(){
+        print("demoColorShow() called")
         sendCommand(command: "whitecolor")
     }
     
     func demoFull(){
+        print("demoFull() called")
         sendCommand(command: "demo")
     }
-    
-    
     
     func sendCommand(command: String) {
         var request = URLRequest(url: URL(string: "https://api.particle.io/v1/devices/43002a000347343337373738/led?access_token=7c85328e2dde3f883825c23866458ec549daf707")!)
