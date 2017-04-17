@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Alarm/SettingsViewController.swift"
-            timestampString = "514136651.700714"
+            timestampString = "514137497.212846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "SettingsViewController"
-            landmarkType = "3">
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "demoFastClock(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

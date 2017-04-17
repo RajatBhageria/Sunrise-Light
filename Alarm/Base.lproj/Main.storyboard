@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yG-6E-QAX">
-                                <rect key="frame" x="103" y="91" width="236" height="66"/>
+                                <rect key="frame" x="103" y="245" width="236" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Demo Sunrise Light">
@@ -65,39 +65,54 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SunriseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Voi-Ui-fEE">
-                                <rect key="frame" x="36" y="99" width="50" height="50"/>
+                                <rect key="frame" x="36" y="253" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-RR-NIu">
-                                <rect key="frame" x="91" y="161" width="236" height="66"/>
+                                <rect key="frame" x="91" y="329" width="236" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Demo Fast Clock">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="demoFastClock:" destination="66s-ZU-bEd" eventType="touchUpInside" id="Bhm-4u-Tns"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="lZS-mJ-TQu">
-                                <rect key="frame" x="36" y="169" width="50" height="50"/>
+                                <rect key="frame" x="36" y="337" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-vP-4Fr">
-                                <rect key="frame" x="97" y="229" width="236" height="66"/>
+                                <rect key="frame" x="97" y="417" width="236" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Demo Color Show">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="demoColorShow:" destination="66s-ZU-bEd" eventType="touchUpInside" id="84M-fJ-hzQ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColorShowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="eyy-iX-r6o">
-                                <rect key="frame" x="38" y="237" width="50" height="50"/>
+                                <rect key="frame" x="38" y="425" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Experience Lumia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxx-Mq-Qn5">
+                                <rect key="frame" x="38" y="100" width="303" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="37"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="lbW-A5-CzX"/>
                     <connections>
                         <outlet property="demoButton" destination="1yG-6E-QAX" id="jAc-W5-z9D"/>
+                        <outlet property="demoColorShow" destination="c6a-vP-4Fr" id="tjU-fT-1Wy"/>
+                        <outlet property="demoFastClock" destination="JDy-RR-NIu" id="eFw-DA-c7L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKe-ig-6cF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,12 +167,6 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dQi-iQ-p46">
-                        <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MjH-Dv-jvl">
-                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Settings"/>
-                        </button>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="aSU-Te-jrO">
                             <connections>
                                 <segue destination="XKb-lA-7Db" kind="presentation" identifier="addSegue" id="Okr-Zd-u6D"/>
@@ -170,6 +179,14 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCo-Yz-gt0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MjH-Dv-jvl">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Settings"/>
+                    <connections>
+                        <segue destination="66s-ZU-bEd" kind="modal" id="vhp-u2-VGT"/>
+                    </connections>
+                </button>
             </objects>
             <point key="canvasLocation" x="1900" y="-247.82608695652175"/>
         </scene>
@@ -482,6 +499,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZC-2s-RKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2746.875" y="-247.18309859154928"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TGI-33-D9L">
+            <objects>
+                <viewController id="OIt-Aa-hUd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rZ7-RE-ay4"/>
+                        <viewControllerLayoutGuide type="bottom" id="T6F-n5-u2W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6tr-mh-peh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFS-w8-0en" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="M1q-md-Jmv">
+            <objects>
+                <viewControllerPlaceholder id="AoT-lT-scT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iHw-tO-bB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
