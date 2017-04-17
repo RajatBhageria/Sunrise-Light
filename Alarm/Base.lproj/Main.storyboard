@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,12 +39,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueBackground" translatesAutoresizingMaskIntoConstraints="NO" id="v2F-i5-RlO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueBackground" translatesAutoresizingMaskIntoConstraints="NO" id="v2F-i5-RlO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yG-6E-QAX">
-                                <rect key="frame" x="103" y="245" width="236" height="66"/>
+                                <rect key="frame" x="103" y="307" width="236" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Demo Sunrise Light">
@@ -54,11 +54,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SunriseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Voi-Ui-fEE">
-                                <rect key="frame" x="36" y="253" width="50" height="50"/>
+                                <rect key="frame" x="36" y="315" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-RR-NIu">
-                                <rect key="frame" x="91" y="329" width="236" height="66"/>
+                                <rect key="frame" x="91" y="409" width="236" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Demo Fast Clock">
@@ -69,11 +69,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="lZS-mJ-TQu">
-                                <rect key="frame" x="36" y="337" width="50" height="50"/>
+                                <rect key="frame" x="36" y="417" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-vP-4Fr">
-                                <rect key="frame" x="97" y="417" width="236" height="66"/>
+                                <rect key="frame" x="97" y="511" width="236" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Demo Color Show">
@@ -84,12 +84,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColorShowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="eyy-iX-r6o">
-                                <rect key="frame" x="38" y="425" width="50" height="50"/>
+                                <rect key="frame" x="38" y="519" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Experience Lumia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxx-Mq-Qn5">
-                                <rect key="frame" x="38" y="118" width="303" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience Lumia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxx-Mq-Qn5">
+                                <rect key="frame" x="38" y="139" width="299" height="51"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="37"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -103,6 +102,15 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v2F-i5-RlO" firstAttribute="leading" secondItem="SXv-YU-5M0" secondAttribute="leading" id="8Tw-ad-02T"/>
+                            <constraint firstAttribute="trailing" secondItem="v2F-i5-RlO" secondAttribute="trailing" id="HRr-2x-hl0"/>
+                            <constraint firstItem="v2F-i5-RlO" firstAttribute="top" secondItem="SXv-YU-5M0" secondAttribute="top" id="RpP-eK-QSC"/>
+                            <constraint firstItem="nxx-Mq-Qn5" firstAttribute="top" secondItem="BMR-b4-HTU" secondAttribute="bottom" constant="75" id="gCT-wE-QyY"/>
+                            <constraint firstAttribute="bottom" secondItem="v2F-i5-RlO" secondAttribute="bottom" id="lyE-pG-Czl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nxx-Mq-Qn5" secondAttribute="trailing" constant="22" id="siG-xl-BfF"/>
+                            <constraint firstItem="nxx-Mq-Qn5" firstAttribute="leading" secondItem="SXv-YU-5M0" secondAttribute="leadingMargin" constant="22" id="vSy-wh-1v1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lbW-A5-CzX"/>
                     <connections>
@@ -501,30 +509,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZC-2s-RKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2746.875" y="-247.18309859154928"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="TGI-33-D9L">
-            <objects>
-                <viewController id="OIt-Aa-hUd" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rZ7-RE-ay4"/>
-                        <viewControllerLayoutGuide type="bottom" id="T6F-n5-u2W"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6tr-mh-peh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PFS-w8-0en" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="M1q-md-Jmv">
-            <objects>
-                <viewControllerPlaceholder id="AoT-lT-scT" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iHw-tO-bB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
