@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yG-6E-QAX">
-                                <rect key="frame" x="69" y="97" width="236" height="66"/>
+                                <rect key="frame" x="103" y="91" width="236" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Demo Sunrise Light">
@@ -64,22 +64,34 @@
                                     <action selector="demo:" destination="66s-ZU-bEd" eventType="touchUpInside" id="BJ5-At-qtd"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SunriseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Voi-Ui-fEE">
+                                <rect key="frame" x="36" y="99" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-RR-NIu">
-                                <rect key="frame" x="69" y="171" width="236" height="66"/>
+                                <rect key="frame" x="91" y="161" width="236" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Demo Fast Clock">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="lZS-mJ-TQu">
+                                <rect key="frame" x="36" y="169" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-vP-4Fr">
-                                <rect key="frame" x="69" y="245" width="236" height="66"/>
+                                <rect key="frame" x="97" y="229" width="236" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Demo Color Show">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColorShowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="eyy-iX-r6o">
+                                <rect key="frame" x="38" y="237" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -474,6 +486,9 @@
     </scenes>
     <resources>
         <image name="BlueBackground" width="185" height="272"/>
+        <image name="Clock" width="100" height="100"/>
+        <image name="ColorShowIcon" width="250" height="250"/>
+        <image name="SunriseIcon" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Okr-Zd-u6D"/>

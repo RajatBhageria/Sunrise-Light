@@ -16,6 +16,4 @@ class SettingsViewController: UIViewController{
         var light: LightConnection = LightConnection();
         light.turnOnLight();
     }
-   
-
-}
+   }
