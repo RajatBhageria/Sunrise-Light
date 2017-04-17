@@ -26,6 +26,5 @@ class LightConnection{
             let responseString = String(data: data, encoding: .utf8)
         }
         task.resume()
-
     }
 }
