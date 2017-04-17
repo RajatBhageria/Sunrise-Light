@@ -10,9 +10,27 @@ import Foundation
 
 class LightConnection{
     func turnOnLight(){
+        sendCommand(command: "sunrise")
+    }
+    
+    func demoFastClock(){
+        sendCommand(command: "settime")
+    }
+    
+    func demoColorShow(){
+        sendCommand(command: "whitecolor")
+    }
+    
+    func demoFull(){
+        sendCommand(command: "demo")
+    }
+    
+    
+    
+    func sendCommand(command: String) {
         var request = URLRequest(url: URL(string: "https://api.particle.io/v1/devices/43002a000347343337373738/led?access_token=7c85328e2dde3f883825c23866458ec549daf707")!)
         request.httpMethod = "POST"
-        let postString = "arg=off"
+        let postString = "arg=" + command
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {                                                 // check for fundamental networking error

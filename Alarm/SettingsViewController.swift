@@ -16,17 +16,20 @@ class SettingsViewController: UIViewController{
     
     @IBOutlet weak var demoColorShow: UIButton!
     
+    let light: LightConnection = LightConnection();
+    
     //For the demo sunrise light
     @IBAction func demo(_ sender: Any) {
-        var light: LightConnection = LightConnection();
         light.turnOnLight();
     }
     
     //For the demo fast clock
     @IBAction func demoFastClock(_ sender: Any) {
+        light.demoFastClock();
     }
     
     //For the demo color show
     @IBAction func demoColorShow(_ sender: Any) {
+        light.demoColorShow();
     }
    }
