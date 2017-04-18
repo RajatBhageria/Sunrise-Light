@@ -31,13 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AVAudioPlayerDelegate, Al
         var isSnooze: Bool = false
         var soundName: String = ""
         var index: Int = -1
+        
+        playSound(soundName)
+        
         if let userInfo = notification.userInfo {
             isSnooze = userInfo["snooze"] as! Bool
             soundName = userInfo["soundName"] as! String
             index = userInfo["index"] as! Int
         }
         
-        playSound(soundName)
         //schedule notification for snooze
         if isSnooze {
             alarmScheduler.setNotificationForSnooze(snoozeMinute: 9, soundName: soundName, index: index)
@@ -47,7 +49,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AVAudioPlayerDelegate, Al
             storageController.addAction(snoozeOption)
         }
         let stopOption = UIAlertAction(title: "OK", style: .default) {
+            
             (action:UIAlertAction)->Void in self.audioPlayer?.stop()
+            
+            let light: LightConnection = LightConnection();
+            light.demoFastClock();
             //change UI
             let vc = self.window?.rootViewController as! UINavigationController
             let mainVC = vc.topViewController as! MainAlarmViewController
@@ -70,7 +76,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AVAudioPlayerDelegate, Al
         
         storageController.addAction(stopOption)
         window?.rootViewController!.present(storageController, animated: true, completion: nil)
-  
     }
     
     //snooze notification handler when app in background
@@ -127,7 +132,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AVAudioPlayerDelegate, Al
         audioPlayer!.play()
         
         //turn on the light! 
-        var light: LightConnection = LightConnection();
+        let light: LightConnection = LightConnection();
         light.turnOnLight();
     }
     

@@ -28,6 +28,7 @@ class LightConnection{
     
     
     func sendCommand(command: String) {
+        print(command + "called on Light")
         var request = URLRequest(url: URL(string: "https://api.particle.io/v1/devices/43002a000347343337373738/led?access_token=7c85328e2dde3f883825c23866458ec549daf707")!)
         request.httpMethod = "POST"
         let postString = "arg=" + command
