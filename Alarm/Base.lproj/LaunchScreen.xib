@@ -15,12 +15,17 @@
             <rect key="frame" x="0.0" y="0.0" width="460" height="655"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Candela-1" translatesAutoresizingMaskIntoConstraints="NO" id="I3w-PY-6ap">
-                    <rect key="frame" x="110" y="93" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Candela-1" translatesAutoresizingMaskIntoConstraints="NO" id="I3w-PY-6ap">
+                    <rect key="frame" x="65" y="151" width="330" height="128"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="I3w-PY-6ap" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="151" id="NTx-xg-yGm"/>
+                <constraint firstItem="I3w-PY-6ap" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="65" id="Ol9-KV-iDg"/>
+                <constraint firstAttribute="trailing" secondItem="I3w-PY-6ap" secondAttribute="trailing" constant="65" id="o21-NT-VEa"/>
+                <constraint firstAttribute="bottom" secondItem="I3w-PY-6ap" secondAttribute="bottom" constant="376" id="x71-NZ-yhP"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="538" y="542.5"/>
