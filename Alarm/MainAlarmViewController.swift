@@ -174,6 +174,7 @@ class MainAlarmViewController: UITableViewController{
         // Pass the selected object to the new view controller.
         
         if (segue.destination is UINavigationController) {
+<<<<<<< HEAD
             
         } else {
             return
@@ -184,10 +185,26 @@ class MainAlarmViewController: UITableViewController{
         if segue.identifier == Id.addSegueIdentifier {
             addEditController.navigationItem.title = "Add Alarm"
             addEditController.segueInfo = SegueInfo(curCellIndex: alarmModel.count, isEditMode: false, label: "Alarm", mediaLabel: "bell", mediaID: "", repeatWeekdays: [], enabled: false)
+=======
+ 
+        } else {
+            return
+>>>>>>> origin
         }
-        else if segue.identifier == Id.editSegueIdentifier {
-            addEditController.navigationItem.title = "Edit Alarm"
-            addEditController.segueInfo = sender as! SegueInfo
+        
+        do {
+            let dist = segue.destination as! UINavigationController
+            let addEditController = dist.topViewController as! AlarmAddEditViewController
+            if segue.identifier == Id.addSegueIdentifier {
+                addEditController.navigationItem.title = "Add Alarm"
+                addEditController.segueInfo = SegueInfo(curCellIndex: alarmModel.count, isEditMode: false, label: "Alarm", mediaLabel: "bell", mediaID: "", repeatWeekdays: [], enabled: false)
+            }
+            else if segue.identifier == Id.editSegueIdentifier {
+                addEditController.navigationItem.title = "Edit Alarm"
+                addEditController.segueInfo = sender as! SegueInfo
+            }
+        } catch {
+            
         }
     }
     

@@ -10,22 +10,24 @@ import Foundation
 
 class LightConnection{
     func turnOnLight(){
+        print("turnOnLight() called")
         sendCommand(command: "sunrise")
     }
     
     func demoFastClock(){
+        print("demoFastClock() called")
         sendCommand(command: "settime")
     }
     
     func demoColorShow(){
+        print("demoColorShow() called")
         sendCommand(command: "whitecolor")
     }
     
     func demoFull(){
+        print("demoFull() called")
         sendCommand(command: "demo")
     }
-    
-    
     
     func sendCommand(command: String) {
         print(command + "called on Light")
