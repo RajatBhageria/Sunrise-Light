@@ -22,3 +22,5 @@ Identify the “input” end of your NeoPixel strip, pixel(s) or other device. O
 #What you should be able to do:
 
 Use the iOS app to control the lights in your clock container.
+
+Built by Rajat Bhageria, Phil Hu, Bill He, and Kashish Gupta 
